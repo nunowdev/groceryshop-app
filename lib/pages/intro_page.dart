@@ -16,7 +16,7 @@ class IntroPage extends StatelessWidget {
           child: Image.asset('assets/images/avocado.png'),
         ),
         Padding(
-          padding: EdgeInsets.all(24.0),
+          padding: const EdgeInsets.all(24.0),
           child: Text(
             "We deliver groceries at your doorstep",
             textAlign: TextAlign.center,
@@ -30,15 +30,15 @@ class IntroPage extends StatelessWidget {
         GestureDetector(
           onTap: () => Navigator.pushReplacement(context,
               MaterialPageRoute(builder: (context) {
-            return HomePage();
+            return const HomePage();
           })),
           child: Container(
               decoration: BoxDecoration(
                   color: Colors.deepPurple,
                   borderRadius: BorderRadius.circular(12)),
-              padding: EdgeInsets.all(24),
-              child:
-                  Text("Get Started", style: TextStyle(color: Colors.white))),
+              padding: const EdgeInsets.all(24),
+              child: const Text("Get Started",
+                  style: TextStyle(color: Colors.white))),
         ),
         const Spacer()
       ],
